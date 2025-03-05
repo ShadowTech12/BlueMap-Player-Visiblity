@@ -7,3 +7,6 @@ Commands:
 
 Permissions:
 TBD
+
+Currently Compatible versions:
+1.21.1
