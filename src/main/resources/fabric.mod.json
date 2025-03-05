@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "bmpv",
+  "version": "${version}",
+  "name": "BMPH",
+  "description": "A simple Fabric mod to allow players to hide and show themselves on the live player map on BlueMap",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/bmpv/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "io.ShadowTech.bmpv.BlueMapPlayerVisibility"
+    ]
+  },
+  "mixins": [
+    "bmpv.mixins.json",
+    {
+      "config": "bmpv.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

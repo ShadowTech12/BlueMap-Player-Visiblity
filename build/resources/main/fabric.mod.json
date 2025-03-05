@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "bmpv",
+  "version": "1.3",
+  "name": "BMPV",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/bmpv/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "io.ShadowTech.bmpv.BlueMapPlayerVisibility"
+    ]
+  },
+  "mixins": [
+    "bmpv.mixins.json",
+    {
+      "config": "bmpv.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.10",
+    "fabric": "*",
+    "minecraft": "1.21.1"
+  }
+}
